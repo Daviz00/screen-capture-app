@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Screen Recorder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="render.js"></script>
+  </head>
+
+  <body class="content has-background-black-bis">
+    <header id="titlebar">
+      <div id="drag-region"></div>
+    </header>
+
+    <h3 class="has-text-white-bis title is-3 mt-1 mb-4">⚡ Screen Capture</h3>
+    <div class="box has-background-black"><video></video></div>
+
+    <button
+      id="startBtn"
+      class="button is-primary has-text-black is-rounded is-hovered"
+    >
+      <span class="icon is-small">
+        <i class="fas fa-play"></i>
+      </span>
+    </button>
+
+    <button
+      id="stopBtn"
+      class="button is-warning has-text-black is-rounded is-hovered"
+    >
+      <span class="icon is-small">
+        <i class="fas fa-stop"></i>
+      </span>
+    </button>
+
+    <!-- <hr noshade /> -->
+    <div>
+      <p>
+        <br />
+      </p>
+    </div>
+
+    <button
+      id="videoSelectBtn"
+      class="button is-danger has-text-white-bis is-small is-hovered mt-0 mb-4"
+    >
+      Choose a Video Source
+    </button>
+  </body>
+</html>

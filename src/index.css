@@ -1,0 +1,40 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: azure;
+  /* border: 1px solid #48545c; */
+  overflow-y: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  text-align: center;
+  /* padding-top: 20px; */
+}
+
+/* new edits */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#titlebar {
+  display: block;
+  position: fixed;
+  height: 3.5rem;
+  width: calc(100% - 2px);
+  /* background: #254053; */
+  /* padding: 4px; */
+}
+
+#titlebar #drag-region {
+  width: 100%;
+  height: 100%;
+  -webkit-app-region: drag;
+}
